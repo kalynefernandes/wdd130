@@ -89,3 +89,15 @@ h1 {
     margin-left: 12px;
     border-radius: 4px;
 }
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+}
+
+.hero h1 {
+    color: var(--cor-destaque2);
+}
