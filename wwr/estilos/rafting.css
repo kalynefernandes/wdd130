@@ -122,16 +122,16 @@ footer p {
     font-size: 0.9rem;
 }
 
-.socialmedia {
+.redes-sociais {
     display: flex;
     gap: 15px;
 }
 
-.socialmedia a {
+.redes-sociais a {
     text-decoration: none;
 }
 
-.socialmedia img {
+.redes-sociais img {
     width: 32px;
     height: 32px;
 }
