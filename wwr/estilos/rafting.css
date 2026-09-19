@@ -139,3 +139,10 @@ footer p {
 footer p {
     color: var(--cor-destaque2);
 }
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    /* Torna os ícones pretos em brancos para se destacarem no fundo escuro */
+}
