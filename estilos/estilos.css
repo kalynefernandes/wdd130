@@ -49,10 +49,3 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
-
-.redes-sociais img {
-    width: 30px;
-    height: 30px;
-    filter: invert(1);
-    /* Torna os ícones pretos em brancos para se destacarem no fundo escuro */
-}
