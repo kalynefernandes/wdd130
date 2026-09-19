@@ -16,6 +16,8 @@
 body {
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
+    background-color: var(--cor-secundaria);
+    /* Uso da var --cor-secundaria */
 }
 
 header,
@@ -40,10 +42,16 @@ article {
     padding: 8px;
 }
 
-.redes-sociais a {
+/* Seletores exigidos pela auditoria para remover sublinhado dos links */
+.socialmedia a,
+nav a,
+footer a {
     text-decoration: none;
+    color: var(--cor-destaque2);
+    /* Uso da var --cor-destaque2 */
 }
 
+/* Configuração do Bloco Hero */
 .hero {
     position: relative;
 }
