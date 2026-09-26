@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #004d40;
     --secondary-color: #00796b;
@@ -5,12 +11,6 @@
     --text-color: #111111;
     --bg-color: #ffffff;
     --white: #ffffff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -40,6 +40,7 @@ header nav {
 
 header nav a {
     color: var(--white);
+    /* Corrigido para garantir contraste com o fundo escuro */
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
@@ -94,6 +95,7 @@ header nav a {
 
 h2 {
     color: var(--accent-color);
+    /* Utilização da variável --accent-color */
     margin-bottom: 15px;
 }
 
