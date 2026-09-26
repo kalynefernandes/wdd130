@@ -1,22 +1,24 @@
-/* Configurações Gerais e Cores de Alto Contraste (Cumpri o critério AA de contraste) */
 :root {
     --primary-color: #004d40;
     --secondary-color: #00796b;
     --accent-color: #00251a;
     --text-color: #111111;
-    --bg-color: #f4f4f4;
+    --bg-color: #ffffff;
     --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
-/* 2. HEADER - Utiliza CSS Grid para o layout horizontal */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -30,7 +32,6 @@ header .logo {
     width: auto;
 }
 
-/* 3. NAV - Utiliza CSS Flex para o layout horizontal */
 header nav {
     display: flex;
     justify-content: flex-end;
@@ -44,12 +45,6 @@ header nav a {
     padding: 8px 12px;
 }
 
-header nav a:hover {
-    background-color: var(--secondary-color);
-    border-radius: 4px;
-}
-
-/* HERO SECTION */
 .hero {
     position: relative;
     text-align: center;
@@ -57,7 +52,7 @@ header nav a:hover {
 
 .hero img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -69,7 +64,6 @@ header nav a:hover {
     color: var(--white);
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
-    border-radius: 5px;
 }
 
 .hero article {
@@ -80,64 +74,63 @@ header nav a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 15px;
     max-width: 80%;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-/* 4. CONTEÚDO DA PÁGINA - Seção História */
+.hero article img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
 .historia {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
     text-align: center;
 }
 
-.historia-conteudo {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 20px;
-    align-items: center;
-    margin-top: 20px;
+h2 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
 }
 
-.historia-conteudo img {
-    max-width: 250px;
-    border-radius: 8px;
-}
-
-/* 4. CONTEÚDO DA PÁGINA - Seção Aventura (5 Imagens na Horizontal) */
 .aventura {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.aventura h2 {
+    width: 100%;
     text-align: center;
 }
 
-.galeria-aventura {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.galeria-aventura figure {
-    margin: 0;
+.aventura figure {
     flex: 1;
+    min-width: 180px;
+    margin: 0;
+    text-align: center;
 }
 
-.galeria-aventura img {
+.aventura img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 5px;
 }
 
-.galeria-aventura figcaption {
+figcaption {
     font-size: 0.9rem;
     font-weight: bold;
     margin-top: 5px;
 }
 
-/* 5. FOOTER - Redes Sociais à Direita na Horizontal */
 footer {
     display: flex;
     justify-content: space-between;
@@ -152,17 +145,12 @@ footer p {
     margin: 0;
 }
 
-footer .social-links {
+footer .socialmedia {
     display: flex;
     gap: 15px;
 }
 
-footer .social-links img {
+footer .socialmedia img {
     width: 30px;
     height: 30px;
-}
-
-h2 {
-    color: #00251a;
-    /* Cor mais escura para atingir contraste alto (AA) */
 }
