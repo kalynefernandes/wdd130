@@ -72,9 +72,15 @@
 
         <fieldset>
           <legend>Motivo do Contato:</legend>
-          <label><input type="radio" name="purpose" value="general" checked> Consulta Geral</label>
-          <label><input type="radio" name="purpose" value="booking"> Pergunta sobre Reserva</label>
-          <label><input type="radio" name="purpose" value="suggestion"> Sugestão de Site</label>
+          <label for="purpose-general">
+            <input type="radio" id="purpose-general" name="purpose" value="general" checked> Consulta Geral
+          </label>
+          <label for="purpose-booking">
+            <input type="radio" id="purpose-booking" name="purpose" value="booking"> Pergunta sobre Reserva
+          </label>
+          <label for="purpose-suggestion">
+            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Sugestão de Site
+          </label>
         </fieldset>
 
         <label for="message">Mensagem:</label>
@@ -91,7 +97,18 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Rafting Aventura - Todos os direitos reservados.</p>
+    <p>&copy; 2026 Rafting Aventura | Desenvolvido por Kalyne Lowhanne Santos Pereira</p>
+    <nav class="redes-sociais">
+      <a href="https://facebook.com" target="_blank" rel="noopener">
+        <img src="imagens/facebook.png" alt="Ícone do Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">
+        <img src="imagens/twitter.png" alt="Ícone do Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">
+        <img src="imagens/instagram.png" alt="Ícone do Instagram">
+      </a>
+    </nav>
   </footer>
 </body>
 </html>
