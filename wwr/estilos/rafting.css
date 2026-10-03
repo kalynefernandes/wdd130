@@ -160,3 +160,70 @@ footer .socialmedia img {
     width: 30px;
     height: 30px;
 }
+/* =================================== */
+/* Estilos da Página Fale Conosco      */
+/* =================================== */
+
+.company-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.map-container iframe {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.employee-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.employee-grid figure {
+  text-align: center;
+  margin: 0;
+}
+
+.employee-grid img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #003d80;
+}
