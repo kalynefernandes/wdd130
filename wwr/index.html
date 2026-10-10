@@ -4,42 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 | Página Inicial</title>
+    <title>Rafting Aventura | Página Inicial</title>
     <meta name="description"
-      content="Página inicial do curso WDD 130 de Kalyne Santos, contendo informações do curso e sobre o Brasil.">
-    <meta name="author" content="Kalyne Santos">
-    <link rel="stylesheet" href="estilos/estilos.css">
+      content="Bem-vindo à Rafting Aventura. Descubra os melhores passeios, corredeiras emocionantes e garanta a sua vaga em nossas aventuras pelo rio.">
+    <meta name="author" content="Kalyne Lowhanne Santos Pereira">
+    <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
 <body>
     <header>
-        <h1>Bem-Vindo ao WDD 130</h1>
+        <img src="imagens/logo.png" alt="Logotipo do Rafting Aventura" class="logo">
         <nav>
-            <a href="#">Página Inicial</a>
-            <a href="wwr/">Site de Rafting</a>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
         </nav>
     </header>
 
     <main>
-        <p>Esta página se tornará sua página inicial para o curso. Você removerá este texto e o
-            substituirá por seus próprios detalhes pessoais.</p>
-        <img src="semana02/imagens/perfil.png" alt="Foto de perfil de Kalyne Santos">
+        <!-- Imagem Principal / Hero Section com título em pos. absoluto -->
+        <div class="hero">
+            <img src="imagens/hero.jpg" alt="Rafting nas corredeiras em equipe">
+            <h1>Rafting Aventura</h1>
+            <article>
+                <img src="imagens/historia.jpg" alt="Equipe reunida">
+                <p>Viva momentos inesquecíveis nas corredeiras mais seguras e emocionantes da
+                    região. Junte-se à nossa equipe!</p>
+            </article>
+        </div>
+
+        <!-- Seção de Ofertas com CSS Grid e imagens adicionais -->
+        <section class="home-grid">
+            <h2>Por que escolher a Rafting Aventura?</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="imagens/aventura1.jpg" alt="Salto do Rio Negro">
+                    <h3>Segurança em Primeiro Lugar</h3>
+                    <p>Equipamentos modernos de ponta e instrutores altamente certificados para
+                        garantir total tranquilidade na sua descida.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="imagens/aventura2.jpg" alt="Corredeira do Rio Paranapanema">
+                    <h3>Paisagens Deslumbrantes</h3>
+                    <p>Explore cenários naturais únicos, cachoeiras escondidas e a biodiversidade
+                        vibrante dos nossos rios.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chamada para Ação (CTA) para a página de passeios -->
+        <section class="cta-section">
+            <h2>Pronto para a aventura?</h2>
+            <p>Conheça todos os nossos roteiros e escolha o nível de adrenalina perfeito para você e
+                sua família.</p>
+            <a href="passeios.html" class="cta-button">Ver Nossos Passeios</a>
+        </section>
+
+        <!-- Formulário de Inscrição para a Newsletter -->
+        <section class="newsletter-section">
+            <h2>Inscreva-se na nossa Newsletter</h2>
+            <p>Receba ofertas exclusivas, dicas de aventura e novidades diretamente no seu e-mail.
+            </p>
+            <form action="#" method="post" class="newsletter-form">
+                <label for="username">Nome:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="useremail">E-mail:</label>
+                <input type="email" id="useremail" name="useremail" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
-    <aside>
-        <h2>Brasil</h2>
-        <img src="semana02/imagens/perfil.png" alt="Bandeira e paisagem representativa do Brasil">
-        <p>O Brasil é um país localizado na América do Sul. Faz fronteira com a Argentina e o
-            Uruguai ao sul, Paraguai e Bolívia a sudoeste, Peru, Colômbia e Venezuela a noroeste,
-            Guiana, Suriname e Guiana Francesa ao norte, além de possuir uma extensa costa ao longo
-            do oceano Atlântico a leste. O país é um importante centro de agricultura, indústria,
-            energia e tecnologia, além de um relevante destino turístico na região. Brasília é a
-            capital do país, enquanto São Paulo é sua maior cidade. O Brasil abriga uma grande
-            diversidade cultural, étnica e ambiental.</p>
-    </aside>
-
     <footer>
-        <p>&copy; 2026 Kalyne Santos | Brasil</p>
+        <p>&copy; 2026 Rafting Aventura | Desenvolvido por Kalyne Lowhanne Santos Pereira</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="imagens/facebook.svg" alt="Ícone do Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="imagens/twitter.svg" alt="Ícone do Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="imagens/instagram.svg" alt="Ícone do Instagram">
+            </a>
+        </nav>
     </footer>
 </body>
 
